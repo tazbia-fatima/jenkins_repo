@@ -1,6 +1,6 @@
 node {
     def root = tool name: 'demo', type: 'go'
-    ws("${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_ID}/src/github.com/kns-1/jenkins_pipeline") {
+    ws("${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_ID}/src/github.com/tazbia-fatima/jenkins_repo") {
         withEnv(["GOROOT=${root}", "GOPATH=${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_ID}/", "PATH+GO=${root}/bin"]) {
             env.PATH="${GOPATH}/bin:$PATH"
             
