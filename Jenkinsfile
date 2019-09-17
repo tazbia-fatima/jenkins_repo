@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Building..'
-      } 
+        sh 'go build hello.go'
+        sh 'ls'
+        } 
     }
     stage('Test') {
       steps {
