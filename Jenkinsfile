@@ -16,7 +16,7 @@ node {
             
             stage 'Build'
         sh 'git clone https://github.com/tazbia-fatima/jenkins_repo.git'
-        sh 'cd jenkins_pipeline'
+        sh 'cd jenkins_repo'
         sh 'go build ./hello.go'
         sh 'ls'
         
