@@ -13,7 +13,6 @@ pipeline{
         stage('Build-go'){
             steps{
                 sh 'echo Building'
-                sh '
                 sh 'go build hello.go'
             }
         }
