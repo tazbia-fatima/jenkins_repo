@@ -8,7 +8,7 @@ pipeline{
           go 'Go1.13'
       }
     environment{
-        G113MODULE 'on'
+        G113MODULE = 'on'
     }
     stages{
         stage('Build'){
